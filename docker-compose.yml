@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: test-tyrell-app
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+    - ./:/var/www
+  nginx:
+    image: nginx:1.19-alpine
+    container_name: test-tyrell-nginx
+    restart: unless-stopped
+    ports:
+      - "8000:80"
+    volumes:
+    -  ./:/var/www
+    - ./nginx/:/etc/nginx/conf.d

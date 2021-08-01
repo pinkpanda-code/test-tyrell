@@ -1,0 +1,21 @@
+
+For question 1,
+
+Not going to lie, used roughly a total of 2 hours 30 mins to complete from front to back and adding up assumptions.
+
+Assumptions #1 - used "NA" to indicate players that did not get any cards. 
+Assumptions #2 - for scenario of getting 0 as input. because it is not an error and also not in example of output, assume to return message to indicate there are no players to distribute cards.
+
+The core logic which is the do while loop took around 30 mins. Other than that spent time confirming the flow, validations and usage of php/jquery/html are correct. 
+
+
+
+
+For questions 2,
+ 
+I can only suggest to optimize those columns there are using for JOIN and ORDER BY (eg. job_id and other id columns), understand that columns used for LIKE cannot speed up by using index also.
+
+To be honest, I have really no idea what can be improved more in terms of rewriting this query without changing its intention to do all the LEFT JOIN and all the WHERE LIKE with OR and I would love to know how to do it if possible.
+
+Time spent is around 30 mins to look around ways to improve the query.
+
